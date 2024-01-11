@@ -217,9 +217,6 @@
                                                         @foreach($strategic_and_planning as $strategic_and_plannings)
                                                             <p>- {{$strategic_and_plannings}}</p>
                                                         @endforeach
-                                                        <p>- Lead Generation</p>
-                                                        <p>- Social Media Management</p>
-                                                        <p>- Email Marketing</p>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -243,33 +240,32 @@
                                 </table>
 
                             @endif
-
-                            <table class="column">
-                                <tr>
-                                    <td class="padding">
-                                        <table
-                                            style="border-radius: 10px; border: 1px solid #f0f0f0; padding: 10px;"
-                                            class="content">
-                                            <tr>
-                                                <td>
-                                                    <img style="max-width: 150px; border-radius: 10px;"
-                                                         width="150px"
-                                                         src="{{asset('services/New folder/Group 770762.png')}}"
-                                                         alt="">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>- SEO, SEM, PPC</p>
-                                                    <p>- Lead Generation</p>
-                                                    <p>- Social Media Management</p>
-                                                    <p>- Email Marketing</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center">
-                                                    <button
-                                                        style="font-family: Helvetica;
+                            @if(count($coding_and_technology_integration) >0)
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table
+                                                style="border-radius: 10px; border: 1px solid #f0f0f0; padding: 10px;"
+                                                class="content">
+                                                <tr>
+                                                    <td>
+                                                        <img style="max-width: 150px; border-radius: 10px;"
+                                                             width="150px"
+                                                             src="{{asset('services/New folder/Group 770762.png')}}"
+                                                             alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        @foreach($coding_and_technology_integration as $coding_and_technology_integrations)
+                                                            <p>- {{$coding_and_technology_integrations}}</p>
+                                                        @endforeach
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">
+                                                        <button
+                                                            style="font-family: Helvetica;
 																	color: white;
 																	padding: 5px;
 																	border-radius: 20px;
@@ -277,41 +273,41 @@
 																	border: 0px;
 																	background-color: #73f497;
 																	background-image: linear-gradient(to right, #73f497, #4eefae, #23e9c2, #00e1d1, #00d9dc, #00d4e1, #00cfe5, #15c9e8, #11c6eb, #16c2ee, #21bef0, #2ebaf2);">
-                                                        Let's Start
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <table class="column">
-                                <tr>
-                                    <td class="padding">
-                                        <table
-                                            style="border-radius: 10px; border: 1px solid #f0f0f0; padding: 10px;"
-                                            class="content">
-                                            <tr>
-                                                <td>
-                                                    <img style="max-width: 600px; border-radius: 10px;"
-                                                         width="150px"
-                                                         src="{{asset('services/New folder/Group 770762.png')}}"
-                                                         alt="">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>- SEO, SEM, PPC</p>
-                                                    <p>- Lead Generation</p>
-                                                    <p>- Social Media Management</p>
-                                                    <p>- Email Marketing</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="center">
-                                                    <button
-                                                        style="font-family: Helvetica;
+                                                            Let's Start
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            @endif
+                            @if(count($coding_and_technology_integration) >0)
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table
+                                                style="border-radius: 10px; border: 1px solid #f0f0f0; padding: 10px;"
+                                                class="content">
+                                                <tr>
+                                                    <td>
+                                                        <img style="max-width: 600px; border-radius: 10px;"
+                                                             width="150px"
+                                                             src="{{asset('services/New folder/Group 770762.png')}}"
+                                                             alt="">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        @foreach($digital_marketing as $digital_marketings)
+                                                            <p>- {{$digital_marketings}}</p>
+                                                        @endforeach
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center">
+                                                        <button
+                                                            style="font-family: Helvetica;
 																	color: white;
 																	padding: 5px;
 																	border-radius: 20px;
@@ -319,14 +315,15 @@
 																	border: 0px;
 																	background-color: #73f497;
 																	background-image: linear-gradient(to right, #73f497, #4eefae, #23e9c2, #00e1d1, #00d9dc, #00d4e1, #00cfe5, #15c9e8, #11c6eb, #16c2ee, #21bef0, #2ebaf2);">
-                                                        Let's Start
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                                                            Let's Start
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            @endif
 
                         </td>
                     </tr>
